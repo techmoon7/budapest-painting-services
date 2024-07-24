@@ -1,62 +1,102 @@
+/* General Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
+    color: #333;
 }
 
+a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Header Styles */
 header {
-    background-color: #333;
+    background: #333;
     color: #fff;
-    padding: 1rem 0;
-    text-align: center;
+    padding: 20px 0;
 }
 
 header h1 {
+    text-align: center;
     margin: 0;
 }
 
 nav ul {
-    list-style: none;
     padding: 0;
-    display: flex;
-    justify-content: center;
-    background-color: #444;
-    margin: 0;
+    list-style: none;
+    text-align: center;
 }
 
 nav ul li {
-    margin: 0 1rem;
+    display: inline;
+    margin: 0 15px;
 }
 
 nav ul li a {
     color: #fff;
-    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
 }
 
-main {
-    padding: 1rem;
+/* Banner Styles */
+.banner {
+    background: url('https://via.placeholder.com/1500x400') no-repeat center center/cover;
+    color: #fff;
+    padding: 100px 0;
+    text-align: center;
 }
 
-main section {
-    margin-bottom: 2rem;
+.banner h2 {
+    font-size: 48px;
+    margin: 0;
+}
+
+.banner p {
+    font-size: 24px;
+}
+
+/* Content Section Styles */
+.content-section {
+    padding: 40px 0;
     background: #fff;
-    padding: 1rem;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
 }
 
-main section h2 {
-    border-bottom: 2px solid #444;
-    padding-bottom: 0.5rem;
+.content-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
 }
 
+.content-section p, .content-section ul {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.content-section ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+/* Footer Styles */
 footer {
-    background-color: #333;
+    background: #333;
     color: #fff;
     text-align: center;
-    padding: 1rem 0;
-    position: fixed;
-    width: 100%;
+    padding: 10px 0;
+    position: relative;
     bottom: 0;
+    width: 100%;
 }
