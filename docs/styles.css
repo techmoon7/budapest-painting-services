@@ -32,6 +32,7 @@ header {
 header h1 {
     text-align: center;
     margin: 0;
+    font-size: 2.5em;
 }
 
 nav ul {
@@ -73,11 +74,13 @@ nav ul li a {
     padding: 40px 0;
     background: #fff;
     margin: 20px 0;
+    text-align: center;
 }
 
 .content-section h2 {
-    text-align: center;
     margin-bottom: 20px;
+    font-size: 2em;
+    color: #007BFF;
 }
 
 .content-section p, .content-section ul {
@@ -90,6 +93,10 @@ nav ul li a {
     padding-left: 20px;
 }
 
+.content-section ul li {
+    margin: 10px 0;
+}
+
 /* Footer Styles */
 footer {
     background: #333;
@@ -99,4 +106,26 @@ footer {
     position: relative;
     bottom: 0;
     width: 100%;
+}
+
+/* Add some colors and animations */
+.content-section ul li {
+    transition: color 0.3s ease-in-out;
+}
+
+.content-section ul li:hover {
+    color: #007BFF;
+}
+
+header, footer, .content-section {
+    border-bottom: 5px solid #007BFF;
+}
+
+.banner h2, .banner p {
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
